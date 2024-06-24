@@ -1,10 +1,10 @@
-[![GitHub License](https://img.shields.io/github/license/wehaaportal/OfusPy3)](https://github.com/wehaaportal/OfusPy3/blob/main/LICENSE) 
-[![GitHub Release](https://img.shields.io/github/v/release/wehaaportal/OfusPy3?include_prereleases)](https://github.com/wehaaportal/OfusPy3/releases)
-![GitHub Size](https://img.shields.io/github/repo-size/wehaaportal/OfusPy3)
+[![GitHub License](https://img.shields.io/github/license/wehaaportal/OfusPy-3)](https://github.com/wehaaportal/OfusPy-3/blob/main/LICENSE) 
+[![GitHub Release](https://img.shields.io/github/v/release/wehaaportal/OfusPy-3?include_prereleases)](https://github.com/wehaaportal/OfusPy-3/releases)
+![GitHub Size](https://img.shields.io/github/repo-size/wehaaportal/OfusPy-3)
 
 # OfusPy 3
 
-![OfusPy3 Captura](https://github.com/wehaaportal/OfusPy/blob/main/assets/Code_Obfuscator.png "OfusPy3.0.1a14")
+![OfusPy3 Captura](https://github.com/wehaaportal/OfusPy-3/blob/main/Code_Obfuscator.png "OfusPy3.0.1a14")
 
 **OfusPy 3** es una aplicación diseñada para la ofuscación de código Python, brindando una capa adicional de seguridad a través de la tecnología de compresión ZIP y la codificación Base64, complementadas con un "salt" para una protección más robusta.
 
