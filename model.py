@@ -15,7 +15,14 @@ import os, sys, sqlite3, zlib, base64, ast, secrets
 
 # PyQt6 
 from PyQt6.QtGui import QPalette, QColor
-from PyQt6.QtCore import Qt, QSettings
+from PyQt6.QtCore import Qt, QSettings, QDir
+
+#Define Dir
+HOME_PATH = QDir.toNativeSeparators(QDir.homePath())
+HOME_APP_PATH = os.path.join(HOME_PATH, ".ofuspy3/")
+
+if not os.path.isdir(HOME_APP_PATH):
+    os.mkdir(HOME_APP_PATH, 0o777)
 
 # Modelo
 class ObfuscatorModel:
@@ -54,7 +61,7 @@ exec(zlib.decompress(base64.b64decode(data_encoded)))
 
 class LogModel:
     def __init__(self):
-        self.conn = sqlite3.connect("OfusLogs.db")
+        self.conn = sqlite3.connect(HOME_APP_PATH+'OfusLogs.db')
         self.cur = self.conn.cursor()
         self.cur.execute("""
             CREATE TABLE IF NOT EXISTS logs (

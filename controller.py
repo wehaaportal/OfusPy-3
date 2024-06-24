@@ -31,6 +31,8 @@ class MainController:
         self.log_model = log_model
         self. sett = msettings
 
+        self.original_code = None
+
         # Definir la ruta del archivo .ini en el mismo directorio que el script principal
         ini_file_path = os.path.join(os.path.dirname(__file__), 'settings.ini')
         self.settings = QSettings(ini_file_path, QSettings.Format.IniFormat)
@@ -132,7 +134,7 @@ class MainController:
         try:
             original_data = self.original_code.encode("utf-8") if self.original_code else None
 
-            if self.original_code:
+            if original_data:
                 compression_level = self.view.compression_slider.value()
         
                 def progress_callback(progress):
